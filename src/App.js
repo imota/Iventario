@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+
+const StyledButton = styled.button`
+  border: solid 1px #222;
+  background: rgb(255,255,255);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+`;
+
+const StyledDiv = styled.div`
+  text-align: center;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledDiv className="App">
+      <StyledButton>hello world</StyledButton>
+    </StyledDiv>
   );
 }
 
