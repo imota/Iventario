@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
   border: solid 1px #222;
-  background: ${props => props.color};
+  background: ${props => (props.isRed ? "#f00" : "#ff0")};
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 `;
 
@@ -49,7 +49,7 @@ class Inicio extends Component {
   render() {
     return (
       <StyledDiv className="App">
-        <StyledButton color={this.state.color}>hello world</StyledButton>
+        <StyledButton isRed>hello world</StyledButton>
         <ButtonProps
           updateClick={this.updateClick.bind(this)}
           times={this.state.times}
