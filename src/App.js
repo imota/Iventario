@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Inicio from "./Pages/Profile";
+import Home from "./Pages/Home";
 
 class App extends Component {
   constructor(props) {
@@ -19,8 +20,7 @@ class App extends Component {
     return (
       <div>
         <Router>
-          <Route exact path="/" component={Inicio} />
-          <Route path="/inicio" component={Inicio} />
+          <Route exact path="/" component={Home} />
         </Router>
       </div>
     );
