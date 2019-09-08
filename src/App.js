@@ -1,26 +1,20 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Inicio from "./Pages/Profile";
+import Profile from "./Pages/Profile";
 import Home from "./Pages/Home";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      color: "rgb(255,0,255)",
-      times: 0
-    };
+    this.state = {};
   }
-
-  updateClick = () => {
-    this.setState({ times: this.state.times + 1 });
-  };
 
   render() {
     return (
       <div>
         <Router>
           <Route exact path="/" component={Home} />
+          <Route exact path="/profile" component={Profile} />
         </Router>
       </div>
     );
