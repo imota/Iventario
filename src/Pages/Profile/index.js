@@ -1,13 +1,6 @@
 import React, { Component } from "react";
-import {
-  StyledButton,
-  StyledDiv,
-  UserInformationBox,
-  ProfileImage,
-  InformationBox,
-  DefaultInformationText,
-  ProfileImageBox
-} from "./Styles";
+import { StyledDiv, ProfileImage } from "./Styles";
+import DefaultInput from "../../ReusableStyles/DefaultInput";
 
 class Profile extends Component {
   constructor(props) {
@@ -24,17 +17,10 @@ class Profile extends Component {
   render() {
     return (
       <StyledDiv>
-        <UserInformationBox>
-          <ProfileImageBox>
-            <ProfileImage src={"logo192.png"} alt="no image" />
-          </ProfileImageBox>
-          <InformationBox>
-            <DefaultInformationText>Nome</DefaultInformationText>
-            <DefaultInformationText>Email</DefaultInformationText>
-            <DefaultInformationText>Telefone</DefaultInformationText>
-          </InformationBox>
-        </UserInformationBox>
-        <StyledButton isRed>hello world</StyledButton>
+        <ProfileImage src="/logo192.png"></ProfileImage>
+        <DefaultInput placeholder="nome"></DefaultInput>
+        <DefaultInput placeholder="email"></DefaultInput>
+        <DefaultInput placeholder="telefone"></DefaultInput>
       </StyledDiv>
     );
   }
