@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import DefaultButton from "../../ReusableStyles/DefaultButton";
 
 export const StyledDiv = styled.div`
   text-align: center;
@@ -19,4 +20,10 @@ export const ProfileImage = styled.img`
     box-shadow: 0px 0px 5px rgba(20, 20, 20, 0.2);
     border-radius: 20px;
   }
+`;
+
+export const StyledButton = styled(DefaultButton)`
+  width: 80%;
+  margin: 10px auto;
+  height: 50px;
 `;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyledDiv, ProfileImage } from "./Styles";
+import { StyledDiv, ProfileImage, StyledButton } from "./Styles";
 import DefaultInput from "../../ReusableStyles/DefaultInput";
 
 class Profile extends Component {
@@ -21,6 +21,7 @@ class Profile extends Component {
         <DefaultInput placeholder="nome"></DefaultInput>
         <DefaultInput placeholder="email"></DefaultInput>
         <DefaultInput placeholder="telefone"></DefaultInput>
+        <StyledButton>Atualizar perfil</StyledButton>
       </StyledDiv>
     );
   }

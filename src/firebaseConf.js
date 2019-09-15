@@ -11,3 +11,8 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 export default firebase.initializeApp(firebaseConfig);
+
+//App colors
+// primary #339999
+// secondary #336699
+// terciary #339966
